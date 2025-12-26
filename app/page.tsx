@@ -42,7 +42,7 @@ const Container = ({ className = "", children }) => (
 );
 
 // Section wrapper
-const Section = ({ id, className = "", children }) => (
+const Section = ({ id, className = "", children }: { id?: string; className?: string; children: React.ReactNode }) => (
   <section id={id} className={cn("py-16 md:py-24", className)}>
     {children}
   </section>
